@@ -15,14 +15,24 @@ import SupportIcon from './icons/IconSupport.vue'
         <div class="col-md pb-2">
           <details>
             <summary>About Me</summary>
-            I was born on 30th January 2005 in Jakarta.
-            I'am a beginner web developer with basic web skills, advanced, to use laravel Framework. Always want to learn and improve.
+            <ul>
+              <li>
+                I was born on 30th January 2005 in Jakarta.
+                I'am a beginner web developer with basic web skills, advanced, to use laravel Framework. Always want to learn and improve.
+              </li>
+            </ul>
           </details>
           <hr>
           <details>
             <summary>Contact</summary>
-            Phone : +62 81274375824
-            Email : aryashidiq30@gmail.com
+            <ul>
+              <li>
+                Phone : +62 81274375824
+              </li>
+              <li>
+                Email : aryashidiq30@gmail.com
+              </li>
+            </ul>
           </details>
           <hr>
         </div>
@@ -64,6 +74,16 @@ import SupportIcon from './icons/IconSupport.vue'
                     <progress max="100" value="70">70%</progress>
                   </div>
                 </div>
+              </li>
+            </ul>
+          </details>
+          <hr>
+          <details>
+            <summary>Address</summary>
+            <ul>
+              <li>
+                Kenanga Baru Street no 59
+                Depok Jawa Barat Indonesia
               </li>
             </ul>
           </details>
