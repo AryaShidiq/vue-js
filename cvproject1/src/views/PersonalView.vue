@@ -1,10 +1,14 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import PersonalData from '@/components/PersonalData.vue'
+import Footer from '../components/Footer.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="pt-5">
+    <PersonalData/>
   </main>
+  <footer>
+    <Footer/>
+  </footer>
 </template>
 

@@ -1,23 +1,30 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
+import Footer1 from './components/Footer.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Personal</RouterLink>
-        <RouterLink to="/about">SKill</RouterLink>
-      </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md p-3">
+          <img alt="Personal photo" class="logo text-center m-auto d-block" src="@/assets/fotodiri.png" width="125" height="125" />
+        </div>
+        <div class="col-md p-3">
+          <Navbar/>
+        </div>
+      </div>
     </div>
   </header>
-
+  <main>
+    
+  </main>
+  <!-- <Footer>
+    <Footer1/>
+  </Footer> -->
   <RouterView />
 </template>
 
@@ -30,6 +37,10 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  margin: 0 2rem 0 0;
+  min-width: 20rem;
+  border-radius: 50%;
+  min-height: 20rem;
 }
 
 nav {
@@ -37,6 +48,8 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  /* justify-content: space-evenly; */
 }
 
 nav a.router-link-exact-active {
@@ -66,6 +79,9 @@ nav a:first-of-type {
 
   .logo {
     margin: 0 2rem 0 0;
+    min-width: 15rem;
+    border-radius: 50%;
+    min-height: 17rem;
   }
 
   header .wrapper {
